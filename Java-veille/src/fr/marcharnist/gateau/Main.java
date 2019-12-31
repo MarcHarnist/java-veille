@@ -31,12 +31,12 @@ public class Main {
 		System.out.println();
 		System.out.println("Liste des ingrédients: " + gateauN1.getIngredients());
 		
-		//Crée une condition: si chocolat est dans la liste des ingrédients: afficher: c'est un gâteau au chocolat
+		//Pense aux formes: tarte, cake, ... (Outils)
 		System.out.println();
 		System.out.print("Sorte de gâteau: ");
 		System.out.println(gateauN1.getSorteDeGateau());
 		
-		//Pense aux formes: tarte, cake, ... (Outils)
+		//Affiche le nom du gâteau (en fonction d'un ou plusieurs ingrédients)
 		System.out.println();
 		System.out.println("Nom du gâteau: " + gateauN1.getNomDuGateau());
 	}
