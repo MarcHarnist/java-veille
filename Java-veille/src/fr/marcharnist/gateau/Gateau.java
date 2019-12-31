@@ -5,43 +5,41 @@ import java.util.List;
 
 public class Gateau {
 	
-	private List<String> ingredients; // Ne suffit pas! pour éviter un null, instancier ArrayList<>() de Java dans le constructeur
+	//Liste des attributs de l'objet
+	private List<String> listeDesIngredients; // Ne suffit pas! pour éviter un null, instancier ArrayList<>() de Java dans le constructeur
 	private String ingredientsToString;
 	private String nomDuGateau;
 	private String sorteDeGateau;
 
 	//Constructeur
 	Gateau(){
-		ingredients = new ArrayList<String>();
 		
+		//Instancie la classe ArrayList de Java
+		listeDesIngredients = new ArrayList<String>();
+		
+		this.ingredientsToString = "";//efface "null" dans la chaîne
 	}
 
-	public void ingredients(String un, String deux, String trois) {
+	//Récupère les ingrédients et les ajoute à la liste des ingredients
+	public void addIngredients(String ... args) {
 
 		//Détaille la liste d'ingrédients
-		ingredients.add(un);
-		ingredients.add(deux);
-		ingredients.add(trois);
-		
-	}
-	
-	public String getIngredients() {
-		
-		//Déclaration de la variable de retour en nulle
-		this.ingredientsToString = "";
-				
-		//Boucle et enregistre les éléments de la liste dans "ingredients"
-		for(String element : ingredients) {
-
+		for(String element : args) {
+			
 			//S'il y a du chocolat, le nom du cake sera "Cake au chocolat"
 			if(element.equals("chocolat")) {
 				setNomDuGateau("Gâteau au chocolat!");
-			}
+			}			
+			//Ajoute l'élément à la chaîne de caractère
 			ingredientsToString += element + ", ";
 			
+			//Ajoute l'élémnet à la liste des ingrédients
+			listeDesIngredients.add(element);
 		}
-		
-		//Retourne la variable
+	}
+	
+	//Accesseurs et mutateurs
+	public String getIngredients() {
 		return ingredientsToString;
 	}
 	
@@ -54,7 +52,7 @@ public class Gateau {
 	}
 
 	public void setIngredients(List<String> ingredients) {
-		this.ingredients = ingredients;
+		this.listeDesIngredients = ingredients;
 	}
 
 	public String getNomDuGateau() {
@@ -72,6 +70,10 @@ public class Gateau {
 	public void setSorteDeGateau(String sorteDeGateau) {
 		this.sorteDeGateau = sorteDeGateau;
 	}
-
-
+	//Retourne l'objet en chaîne de caractère
+	@Override
+	public String toString() {
+		return String.format("Gateau [ingredients=%s, ingredientsToString=%s, nomDuGateau=%s, sorteDeGateau=%s]",
+				listeDesIngredients, ingredientsToString, nomDuGateau, sorteDeGateau);
+	}
 }

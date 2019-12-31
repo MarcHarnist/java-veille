@@ -4,12 +4,7 @@ public class Cake extends Gateau {
 
 	public Cake() {
 		super();
+		//Déninit la sorte de gâteau
 		this.setSorteDeGateau("cake");
 	}
-
-	@Override
-	public String toString() {
-		return String.format("Cake [getClass()=%s, hashCode()=%s]", getClass(), hashCode());
-	}
-	
 }
