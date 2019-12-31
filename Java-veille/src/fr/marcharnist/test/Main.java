@@ -20,6 +20,22 @@ public class Main {
 		Demo demo_1 = new Demo("Hello world!");
 		System.out.println(demo_1);
 		System.out.println(demo_1.getBeautifullString());
+		
+		//Crée un objet avec ses méthode
+		Gateau gateau = new Gateau();
+		String ingredient_1 = "pomme";
+		String ingredient_2 = "poire";
+		String ingredient_3 = "chocolat";
+		gateau.ingredients(ingredient_1, ingredient_2, ingredient_3);
+		
+		//Affiche l'objet gateau dans la console
+		System.out.println(gateau);
+		
+		//Afficher le contenu de la liste
+		
+		//Crée une condition: si chocolat est dans la liste des ingrédients: afficher: c'est un gâteau au chocolat
+		
+		
 	}
 }
 
