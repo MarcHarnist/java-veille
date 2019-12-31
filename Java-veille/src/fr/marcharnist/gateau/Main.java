@@ -17,14 +17,13 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		//Instancie la classe Demo qui hérite de la classe Tools
-		//La classe Tools propose la gestion de l'affichage des messages
-//		Demo demo_1 = new Demo("Hello world!");
-//		System.out.println(demo_1);
-//		System.out.println(demo_1.getBeautifullString());
-		
 		//Crée un objet avec ses méthode
 		Gateau cake = new Cake();
+		
+		//Affiche la sorte de gâteau
+		System.out.print("Sorte de gâteau:");
+		System.out.println(cake.getSorteDeGateau());
+		
 		String ingredient_1 = "pomme";
 		String ingredient_2 = "poire";
 		String ingredient_3 = "chocolat";
@@ -39,13 +38,11 @@ public class Main {
 		System.out.println("Liste des ingrédients: " + cake.getIngredients());
 		
 		//Crée une condition: si chocolat est dans la liste des ingrédients: afficher: c'est un gâteau au chocolat
+		System.out.println();
+		System.out.println(cake.getSorteDeGateau());
 		
 		//Pense aux formes: tarte, cake, ... (Outils)
-		
-		
-		
+		System.out.println();
+		System.out.println("Sorte de gâteau: " + cake.getSorteDeGateau());
 	}
 }
-
-
-

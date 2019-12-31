@@ -4,7 +4,7 @@ public class Cake extends Gateau {
 
 	public Cake() {
 		super();
-		// TODO Auto-generated constructor stub
+		super.setSorteDeGateau("cake");
 	}
 
 	@Override
