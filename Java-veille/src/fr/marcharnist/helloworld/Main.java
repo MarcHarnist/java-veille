@@ -1,4 +1,4 @@
-package fr.marcharnist.test;
+package fr.marcharnist.helloworld;
 
 /**
  * @version 1.0
@@ -20,6 +20,7 @@ public class Main {
 		Demo demo_1 = new Demo("Hello world!");
 		System.out.println(demo_1);
 		System.out.println(demo_1.getBeautifullString());
+		
 	}
 }
 

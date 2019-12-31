@@ -1,4 +1,6 @@
-package fr.marcharnist.test;
+package fr.marcharnist.helloworld;
+
+import fr.marcharnist.gateau.Tools;
 
 public class Demo extends Tools {
 	
