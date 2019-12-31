@@ -1,4 +1,4 @@
-package fr.marcharnist.test;
+package fr.marcharnist.gateau;
 /**
  * @version 1.0
  * @author GCKEVL - Marc Harnist
