@@ -8,7 +8,6 @@ public class Gateau {
 	private List<String> ingredients; // Ne suffit pas! pour éviter un null, instancier ArrayList<>() de Java dans le constructeur
 	private String ingredientsToString;
 	private String nomDuGateau;
-	@SuppressWarnings("unused")
 	private String sorteDeGateau;
 
 	//Constructeur
@@ -36,7 +35,7 @@ public class Gateau {
 
 			//S'il y a du chocolat, le nom du cake sera "Cake au chocolat"
 			if(element.equals("chocolat")) {
-				setNomDuGateau(this.getSorteDeGateau() + " au chocolat!");
+				setNomDuGateau("Gâteau au chocolat!");
 			}
 			ingredientsToString += element + ", ";
 			
@@ -54,14 +53,6 @@ public class Gateau {
 		this.ingredientsToString = ingredientsToString;
 	}
 
-	public String getSorteDeGateau() {
-		return nomDuGateau;
-	}
-
-	public void setSorteDeGateau(String sorteDeGateau) {
-		this.nomDuGateau = sorteDeGateau;
-	}
-
 	public void setIngredients(List<String> ingredients) {
 		this.ingredients = ingredients;
 	}
@@ -72,6 +63,14 @@ public class Gateau {
 
 	public void setNomDuGateau(String nomDuGateau) {
 		this.nomDuGateau = nomDuGateau;
+	}
+
+	public String getSorteDeGateau() {
+		return sorteDeGateau;
+	}
+
+	public void setSorteDeGateau(String sorteDeGateau) {
+		this.sorteDeGateau = sorteDeGateau;
 	}
 
 

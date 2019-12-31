@@ -4,7 +4,7 @@ public class Cake extends Gateau {
 
 	public Cake() {
 		super();
-		super.setSorteDeGateau("cake");
+		this.setSorteDeGateau("cake");
 	}
 
 	@Override
