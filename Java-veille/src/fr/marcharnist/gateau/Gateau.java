@@ -8,6 +8,7 @@ public class Gateau {
 	private List<String> ingredients; // Ne suffit pas! pour éviter un null, instancier ArrayList<>() de Java dans le constructeur
 	private String ingredientsToString;
 	private String nomDuGateau;
+	@SuppressWarnings("unused")
 	private String sorteDeGateau;
 
 	//Constructeur

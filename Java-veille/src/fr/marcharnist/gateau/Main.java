@@ -1,7 +1,5 @@
 package fr.marcharnist.gateau;
 
-import fr.marcharnist.helloworld.Demo;
-
 /**
  * @version 1.0
  * @author GCKEVL - Marc Harnist
