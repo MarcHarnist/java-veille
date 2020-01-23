@@ -29,7 +29,10 @@ public class Gateau {
 			//S'il y a du chocolat, le nom du cake sera "Cake au chocolat"
 			if(element.equals("chocolat")) {
 				setNomDuGateau("Gâteau au chocolat!");
-			}			
+			}
+			else if(element.contentEquals("quetsch")) {
+				setNomDuGateau("Gâteau au quetsch!");
+			}
 			//Ajoute l'élément à la chaîne de caractère
 			ingredientsToString += element + ", ";
 			
